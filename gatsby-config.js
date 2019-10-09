@@ -2,7 +2,9 @@ require(`dotenv`).config({
   path: `.env`,
 })
 
-module.exports = {
+console.log(process.env.CONTEXT, "process.env.CONTEXT");
+
+const cfg = {
   siteMetadata: {
     siteTitle: `AnmolVajracharya`,
     siteTitleAlt: `Anmol Bajracharya - My Portfolio`,
@@ -27,12 +29,6 @@ module.exports = {
         showThemeAuthor: false
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      },
-    },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -40,6 +36,7 @@ module.exports = {
         name: `AnmolVajracharya - @anmol_vajracharya`,
         short_name: `AnmolVajracharya`,
         description: `Portfolio/photography site of Anmol Bajracharya.`,
+        lang: `en`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#3182ce`,
@@ -61,4 +58,15 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
   ],
+};
+
+if (process.env.CONTEXT === 'production') {
+  const googleAnalyticsCfg = {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: process.env.GOOGLE_ANALYTICS_ID,
+    },
+  };
+  cfg.plugins.push(googleAnalyticsCfg);
 }
+module.exports = cfg;
