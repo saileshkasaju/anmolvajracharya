@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-
+import Link from 'gatsby-link'
 import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
@@ -66,8 +66,8 @@ const DEFAULT_IMAGES = [
 
 class HomeIndex extends React.Component {
   render() {
-    const siteTitle = 'Gatsby Starter - Strata'
-    const siteDescription = 'Site description'
+    const siteTitle = 'ANMOLVAJRACHARYA'
+    const siteDescription = 'My Portfolio'
 
     return (
       <Layout>
@@ -95,9 +95,9 @@ class HomeIndex extends React.Component {
             </p>
             <ul className="actions">
               <li>
-                <a href="#" className="button">
+                <Link to="/" className="button">
                   Learn More
-                </a>
+                </Link>
               </li>
             </ul>
           </section>
@@ -137,7 +137,7 @@ class HomeIndex extends React.Component {
                 <form
                   name="contact"
                   method="POST"
-                  action="/success"
+                  action="/"
                   data-netlify="true"
                 >
                   <div className="row uniform 50%">
@@ -148,18 +148,14 @@ class HomeIndex extends React.Component {
                       <input type="email" name="email" placeholder="Email" />
                     </div>
                     <div className="12u">
-                      <textarea
-                        name="message"
-                        placeholder="Message"
-                        rows="4"
-                      ></textarea>
+                      <textarea name="message" placeholder="Message" rows="4" />
                     </div>
+                    <ul className="actions">
+                      <li>
+                        <input type="submit" value="Send Message" />
+                      </li>
+                    </ul>
                   </div>
-                  <ul className="actions">
-                    <li>
-                      <input type="submit" value="Send Message" />
-                    </li>
-                  </ul>
                 </form>
               </div>
               <div className="4u 12u$(small)">
