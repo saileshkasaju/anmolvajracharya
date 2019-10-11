@@ -1,33 +1,35 @@
 {
-  "private": true,
-  "name": "emilia",
-  "description": "Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.",
-  "version": "0.0.8",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
+  "version": "1.0.0",
+  "author": "Hunter Chang",
+  "dependencies": {
+    "gatsby": "^2.15.14",
+    "gatsby-plugin-manifest": "^2.2.16",
+    "gatsby-plugin-offline": "^3.0.6",
+    "gatsby-plugin-react-helmet": "^3.1.7",
+    "gatsby-plugin-sass": "^2.1.14",
+    "node-sass": "^4.12.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "react-images": "^1.0.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
-  "starter-name": "gatsby-starter-portfolio-emilia",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
-    "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "prestart": "gatsby clean",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "@lekoarts/gatsby-theme-emilia": "^1.0.7",
-    "gatsby": "^2.15.2",
-    "gatsby-plugin-google-analytics": "^2.1.13",
-    "gatsby-plugin-manifest": "^2.2.13",
-    "gatsby-plugin-netlify": "^2.1.11",
-    "gatsby-plugin-offline": "^3.0.1",
-    "gatsby-plugin-sitemap": "^2.2.7",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "format": "prettier --write '**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "cross-env": "^5.2.1"
+    "prettier": "^1.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   }
 }
