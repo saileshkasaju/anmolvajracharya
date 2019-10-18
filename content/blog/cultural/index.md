@@ -29,4 +29,4 @@ description: A Culture doesn't live in the desert because it likes the desert; i
 
 ![Culture](./sukute-5.jpg)
 
-![Culture](./sukute-6.jpg)
+![Culture](./sukute-9.jpg)

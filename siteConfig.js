@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'ANMOLVAJRACHARYA - Portfolio site',
+  name: 'ANMOLVAJRACHARYA',
   shortName: 'anmolvajracharya',
   description: 'Portfolio of a photographer',
   url: 'https://www.anmolvajracharya.com.np', // Domain of your site without prefix!
