@@ -5,8 +5,6 @@ thumbnail: ./IMG_2030.jpg
 description: A Landscape doesn't live in the desert because it likes the desert; it lives there because the desert hasn't killed it yet.
 ---
 
-![Landscape](./IMG_2030.jpg)
-
 ![Landscape](./IMG_2063.jpg)
 
 ![Landscape](./IMG_2220.jpg)

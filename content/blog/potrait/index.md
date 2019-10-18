@@ -5,8 +5,6 @@ thumbnail: ./IMG_1592.jpg
 description: A Portrait doesn't live in the desert because it likes the desert; it lives there because the desert hasn't killed it yet.
 ---
 
-![Portrait](./IMG_1592.jpg)
-
 ![Portrait](./IMG_2252.jpg)
 
 ![Portrait](./IMG_2292.jpg)
