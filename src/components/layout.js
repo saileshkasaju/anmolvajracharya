@@ -4,7 +4,11 @@ import { Link } from 'gatsby'
 const Layout = props => {
   const { title, children } = props
   const [toggleNav, setToggleNav] = React.useState(false)
-  const currentNav = window.location.pathname.replace(new RegExp('/', 'g'), '')
+  const [activeRoute, setActiveRoute] = React.useState('')
+  const isActive = ({ location }) => {
+    const currentNav = location.pathname.replace(new RegExp('/', 'g'), '')
+    setActiveRoute(currentNav)
+  }
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
       <header className="site-head">
@@ -24,16 +28,22 @@ const Layout = props => {
           <nav id="swup" className="site-head-left">
             <ul className="nav" role="menu">
               <li
-                className={`nav-home ${currentNav === '' ? 'nav-current' : ''}`}
+                className={`nav-home ${
+                  activeRoute === '' ? 'nav-current' : ''
+                }`}
                 role="menuitem"
               >
-                <Link to={`/`} onClick={() => setToggleNav(false)}>
+                <Link
+                  to={`/`}
+                  getProps={isActive}
+                  onClick={() => setToggleNav(false)}
+                >
                   Home
                 </Link>
               </li>
               <li
                 className={`nav-about ${
-                  currentNav === 'about' ? 'nav-current' : ''
+                  activeRoute === 'about' ? 'nav-current' : ''
                 }`}
                 role="menuitem"
               >
