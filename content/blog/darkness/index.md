@@ -1,7 +1,7 @@
 ---
 title: Darkness
 date: '2019-10-18'
-thumbnail: ./2776.jpg
+thumbnail: ./IMG_2776.jpg
 description: Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that.
 ---
 
