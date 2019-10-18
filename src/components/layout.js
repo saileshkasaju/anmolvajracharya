@@ -4,15 +4,12 @@ import { Link } from 'gatsby'
 const Layout = props => {
   const { title, children } = props
   const [toggleNav, setToggleNav] = React.useState(false)
+  const currentNav = window.location.pathname.replace(new RegExp('/', 'g'), '')
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
       <header className="site-head">
         <div className="site-head-container">
-          <Link
-            to={`/`}
-            className="nav-burger"
-            onClick={() => setToggleNav(!toggleNav)}
-          >
+          <span className="nav-burger" onClick={() => setToggleNav(!toggleNav)}>
             <div
               className="hamburger hamburger--collapse"
               aria-label="Menu"
@@ -23,18 +20,30 @@ const Layout = props => {
                 <div className="hamburger-inner" />
               </div>
             </div>
-          </Link>
+          </span>
           <nav id="swup" className="site-head-left">
             <ul className="nav" role="menu">
-              <li className="nav-home nav-current" role="menuitem">
-                <Link to={`/`}>Home</Link>
+              <li
+                className={`nav-home ${currentNav === '' ? 'nav-current' : ''}`}
+                role="menuitem"
+              >
+                <Link to={`/`} onClick={() => setToggleNav(false)}>
+                  Home
+                </Link>
               </li>
-              <li className="nav-about" role="menuitem">
-                <Link to={`/about`}>About</Link>
+              <li
+                className={`nav-about ${
+                  currentNav === 'about' ? 'nav-current' : ''
+                }`}
+                role="menuitem"
+              >
+                <Link to={`/about`} onClick={() => setToggleNav(false)}>
+                  About
+                </Link>
               </li>
-              <li className="nav-elements" role="menuitem">
-                <Link to={`/elements`}>Elements</Link>
-              </li>
+              {/* <li className="nav-elements" role="menuitem">
+                <Link to={`/elements`} onClick={() => setToggleNav(false)}>Elements</Link>
+              </li> */}
             </ul>
           </nav>
           <div className="site-head-center">
@@ -42,7 +51,7 @@ const Layout = props => {
               {title}
             </Link>
           </div>
-          <div className="site-head-right">
+          {/* <div className="site-head-right">
             <div className="social-links">
               <a
                 href="https://www.facebook.com"
@@ -61,7 +70,7 @@ const Layout = props => {
                 Twitter
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </header>
       <main id="site-main" className="site-main">

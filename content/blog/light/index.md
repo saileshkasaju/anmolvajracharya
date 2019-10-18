@@ -1,14 +1,20 @@
 ---
 title: Get fruity
 date: '2019-05-02'
-thumbnail: ./mike-dorner-173502-unsplash.jpg
+thumbnail: ./IMG_2492.jpg
 description: A deep investigation into the pastel properties of colourful fruit and their psychological effects on hamsters
 ---
 
-![Fruits](./mike-dorner-173503-unsplash.jpg)
+![Shrine](./IMG_3795.jpg)
 
 <div class="kg-card kg-image-card kg-width-wide">
 
-![Fruits](./mike-dorner-173504-unsplash.jpg)
+![Fire](./IMG_3778.jpg)
+
+</div>
+
+<div class="kg-card kg-image-card kg-width-full">
+
+![Fire](./IMG_5225.jpg)
 
 </div>

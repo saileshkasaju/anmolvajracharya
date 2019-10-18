@@ -1,7 +1,7 @@
 ---
 title: Darkness
-date: '2019-05-08'
-thumbnail: ./bbbb.jpg
+date: '2019-10-18'
+thumbnail: ./2776.jpg
 description: Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that.
 ---
 
@@ -13,18 +13,18 @@ This is the final render.
 
 <div class="kg-card kg-image-card kg-width-full">
 
-![Darkness](./BLACK_II_desktop-1.jpg)
+![Darkness](./IMG_0084.jpg)
 
 </div>
 
 <div class="kg-card kg-image-card kg-width-full">
 
-![Darkness](./BLACK_IX_desktop-1.jpg)
+![Darkness](./3926.jpg)
 
 </div>
 
 <div class="kg-card kg-image-card kg-width-full">
 
-![Darkness](./BLACK_I_desktop-1.jpg)
+![Darkness](./2942.jpg)
 
 </div>
