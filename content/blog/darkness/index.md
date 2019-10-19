@@ -19,12 +19,12 @@ This is the final render.
 
 <div class="kg-card kg-image-card kg-width-full">
 
-![Darkness](./IMG_3926.jpg)
+![Darkness](./IMG_3928.jpg)
 
 </div>
 
 <div class="kg-card kg-image-card kg-width-full">
 
-![Darkness](./IMG_2942.jpg)
+![Darkness](./IMG_3942.jpg)
 
 </div>
