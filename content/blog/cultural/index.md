@@ -5,8 +5,8 @@ thumbnail: ./IMG_1501.jpg
 image:
   [
     ./IMG_1508.jpg,
-    IMG_1562.jpg,
-    IMG_1612.jpg,
+    ./IMG_1562.jpg,
+    ./IMG_1612.jpg,
     ./IMG_1648.jpg,
     ./IMG_2321.jpg,
     ./IMG_3696.jpg,
