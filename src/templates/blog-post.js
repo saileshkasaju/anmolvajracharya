@@ -39,6 +39,20 @@ class BlogPostTemplate extends React.Component {
             </div>
           )}
 
+          {post.frontmatter.images &&
+            post.frontmatter.images.map((eachImage, index) => (
+              <div
+                className="post-content-image"
+                key={`${post.frontmatter.title}-image-${index}`}
+              >
+                <Img
+                  className="kg-image"
+                  fluid={eachImage.childImageSharp.fluid}
+                  alt={post.frontmatter.title}
+                />
+              </div>
+            ))}
+
           <div
             className="post-content-body"
             dangerouslySetInnerHTML={{ __html: post.html }}
@@ -75,6 +89,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         thumbnail {
+          childImageSharp {
+            fluid(maxWidth: 1360) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        images {
           childImageSharp {
             fluid(maxWidth: 1360) {
               ...GatsbyImageSharpFluid
