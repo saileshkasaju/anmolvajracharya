@@ -2,7 +2,7 @@
 title: Cultural
 date: '2019-10-17'
 thumbnail: ./IMG_1501.jpg
-image:
+images:
   [
     ./IMG_1508.jpg,
     ./IMG_1562.jpg,
