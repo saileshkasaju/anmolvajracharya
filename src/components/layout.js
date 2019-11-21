@@ -84,19 +84,21 @@ const Layout = props => {
         </div>
       </header>
       <main id="site-main" className="site-main">
-        <div id="swup" className="transition-fade">
+        <div id="swup_div" className="transition-fade">
           {children}
         </div>
       </main>
       <footer className="site-foot">
-        &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> &mdash;
-        Built with{' '}
+        <Link to="/">
+          &copy; {new Date().getFullYear()} {title}
+        </Link>
+        &mdash;
         <a
           href="https://gatsbyjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Gatsby
+          Built with Gatsby
         </a>
       </footer>
     </div>
