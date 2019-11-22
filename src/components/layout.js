@@ -28,7 +28,7 @@ const Layout = props => {
           <nav id="navigation" className="site-head-left">
             <ul className="nav" role="menu">
               <li
-                className={`nav-home ${
+                className={`nav-link ${
                   activeRoute === '' ? 'nav-current' : ''
                 }`}
                 role="menuitem"
@@ -42,7 +42,7 @@ const Layout = props => {
                 </Link>
               </li>
               <li
-                className={`nav-about ${
+                className={`nav-link ${
                   activeRoute === 'about' ? 'nav-current' : ''
                 }`}
                 role="menuitem"

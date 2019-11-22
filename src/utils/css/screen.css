@@ -171,8 +171,8 @@ body {
   margin: 0;
   padding: 10px 12px;
   color: var(--color-base);
-  font-weight: 600;
-  opacity: 0.4;
+  font-weight: var(--font-bold);
+  opacity: 0.8;
 }
 
 .nav-current a,
@@ -195,7 +195,7 @@ body {
   color: var(--color-base);
   font-size: 2.1rem;
   line-height: 1em;
-  font-weight: 700;
+  font-weight: var(--font-bold);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
