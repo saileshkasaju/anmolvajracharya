@@ -25,7 +25,7 @@ const Layout = props => {
               </div>
             </div>
           </span>
-          <nav id="swup" className="site-head-left">
+          <nav id="navigation" className="site-head-left">
             <ul className="nav" role="menu">
               <li
                 className={`nav-home ${
