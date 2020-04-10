@@ -30,18 +30,18 @@ class BlogPostTemplate extends React.Component {
           )}
 
           {post.frontmatter.thumbnail && (
-            <div className="post-content-image">
+            <figure className="post-content-image">
               <Img
                 className="kg-image"
                 fluid={post.frontmatter.thumbnail.childImageSharp.fluid}
                 alt={post.frontmatter.title}
               />
-            </div>
+            </figure>
           )}
 
           {post.frontmatter.images &&
             post.frontmatter.images.map((eachImage, index) => (
-              <div
+              <figure
                 className="post-content-image"
                 key={`${post.frontmatter.title}-image-${index}`}
               >
@@ -50,7 +50,7 @@ class BlogPostTemplate extends React.Component {
                   fluid={eachImage.childImageSharp.fluid}
                   alt={post.frontmatter.title}
                 />
-              </div>
+              </figure>
             ))}
 
           <div
