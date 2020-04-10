@@ -59,9 +59,10 @@ module.exports = {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
-          require('postcss-easy-import')(),
-          require('postcss-custom-properties')({ preserve: false }),
-          require('postcss-color-function')(),
+          require(`postcss-preset-env`)({ stage: 0 }),
+          // require('postcss-easy-import')(),
+          // require('postcss-custom-properties')({ preserve: false }),
+          // require('postcss-color-function')(),
         ],
       },
     },
